@@ -14,6 +14,7 @@ npm run serve
 
 - Default port : 9999
 - Make sure run backend first : [vshop_be](https://github.com/N3kox/vshop_be)
+- Edit your own backend location in src/base.js
 
 ### Compiles and minifies for production
 
