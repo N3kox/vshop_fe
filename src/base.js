@@ -1,3 +1,4 @@
+//本地
 let beurl = "http://localhost:8080";
 exports.install = function(Vue){
     Vue.prototype.beurl = beurl;

@@ -18,7 +18,7 @@
                         <el-input v-model="userInfo.name" auto-complete="off"/>
                     </el-form-item>
                     <div class="right-part" style="width:50%;float:right;text-align:right;">
-                        <el-button icon="el-icon-circle-plus" type="primary" @click="commitReg">Button</el-button>
+                        <el-button icon="el-icon-circle-plus" type="primary" @click="commitReg">注册</el-button>
                     </div>
                 </el-form>
             </div>

@@ -18,7 +18,7 @@
         <el-upload
           class="upload_image"
           ref="upload"
-          action="http://localhost:8080/item/upload/image"
+          :action="actionUrl"
           :on-preview="handlePreview"
           :on-success="handleExceed"
           :on-remove="handleRemove"
@@ -61,6 +61,7 @@ export default {
       quantity: null
     },
     fileList: [],
+    actionUrl: '',
   }),
   methods: {
     //图片用获取新增商品信息
@@ -119,7 +120,9 @@ export default {
       }
     }
   },
-  mounted() {}
+  mounted() {
+    this.actionUrl = this.patchUrl('/item/upload/image');
+  }
 };
 </script>
 

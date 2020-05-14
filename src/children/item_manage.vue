@@ -101,7 +101,8 @@ export default {
               if (response.body == null) {
                 //unknown error
               } else {
-                that.getItems();
+                //that.getItems();
+                that.$router.go(0);
               }
             });
         })

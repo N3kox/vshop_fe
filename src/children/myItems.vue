@@ -49,6 +49,7 @@ export default {
             that.items.forEach((value, index) => {
               value.createTime = value.createTime.slice(0, 10);
               value.parsedVerify = value.verify == 0 ? "待审核" : "已通过";
+              window.console.log(value.iid);
               value.src = that.patchUrl(`/image/item/${value.iid}.jpg`);
               that.$set(that.items, index, value);
             });
@@ -71,7 +72,7 @@ export default {
           that.$message({
             message: "删除商品成功",
             type: "success"
-          });
+          }); 
           that.deletePanelVisible = false;
         });
     },
